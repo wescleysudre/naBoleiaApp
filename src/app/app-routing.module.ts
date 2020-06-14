@@ -8,6 +8,8 @@ import { SolicitacoesComponent } from './modules/solicitacoes/solicitacoes.compo
 import { AlertasComponent } from './modules/alertas/alertas.component';
 import { MapComponent } from './modules/map/map.component';
 import { DiagnosticoComponent } from './modules/diagnostico/diagnostico.component';
+import { ChatComponent } from './modules/chat/chat.component';
+import { VideoCallComponent } from './modules/video-call/video-call.component';
 
 
 const routes: Routes = [
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'solicitacoes', component: SolicitacoesComponent },
   { path: 'alertas', component: AlertasComponent },
   { path: 'map', component: MapComponent },
-  { path: 'diagnostico', component: DiagnosticoComponent }
+  { path: 'diagnostico', component: DiagnosticoComponent },
+  { path: 'chat', component:ChatComponent },
+  { path: 'call', component:VideoCallComponent },
 ];
 
 @NgModule({

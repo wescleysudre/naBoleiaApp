@@ -16,6 +16,8 @@ import { AlertaDialogComponent } from './widgets/dialogs/alerta-dialog/alerta-di
 import { ConsultaDialogComponent } from './widgets/dialogs/consulta-dialog/consulta-dialog.component';
 import { MapComponent } from './modules/map/map.component';
 import { DiagnosticoComponent } from './modules/diagnostico/diagnostico.component';
+import { ChatComponent } from './modules/chat/chat.component';
+import { VideoCallComponent } from './modules/video-call/video-call.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DiagnosticoComponent } from './modules/diagnostico/diagnostico.componen
     AlertaDialogComponent,
     ConsultaDialogComponent,
     MapComponent,
-    DiagnosticoComponent
+    DiagnosticoComponent,
+    ChatComponent,
+    VideoCallComponent
   ],
   imports: [
     BrowserModule,
