@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "naBoleiaApp"
+    }
+  },
+  "defaultProject": "naBoleiaApp",
+  "cli": {
+    "analytics": "727042dd-4a2d-47ff-b06b-d0a486e6cae0"
+  }
 }
