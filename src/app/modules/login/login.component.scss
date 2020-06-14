@@ -1,9 +1,8 @@
 .example-card {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 40%;
   border-radius: 10px;
 }
-
 
 mat-form-field {
   width: 100%;
@@ -18,4 +17,12 @@ i {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.login {
+  margin-top: 10%;
+}
+
+.nome {
+  margin-top: 10%;
 }
