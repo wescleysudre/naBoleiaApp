@@ -1,14 +1,18 @@
 <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
-  <span>na.Boleia</span>
+  <span class="text">na.Boleia</span>
   <span></span>
   <div fxLayoutGap="20px">
     <a mat-button routerLink="dashboard">
-      <i class="fas fa-columns"></i>
-      Dashboard
+      <span class="text">
+        <i class="fas fa-columns"></i>
+        Dashboard
+      </span>
     </a>
     <a mat-button routerLink="consultas" [matMenuTriggerFor]="menu">
-      <i class="fas fa-calendar-check"></i>
-      Consulta
+      <span class="text">
+        <i class="fas fa-calendar-check"></i>
+        Consulta
+      </span>
     </a>
     <mat-menu #menu="matMenu">
       <button mat-menu-item routerLink="profissional">
@@ -22,8 +26,10 @@
     </mat-menu>
 
     <a mat-button routerLink="alertas">
-      <i class="fas fa-exclamation-circle"></i>
-      Alertas
+      <span class="text">
+        <i class="fas fa-exclamation-circle"></i>
+        Alertas
+      </span>
     </a>
   </div>
 </mat-toolbar>
