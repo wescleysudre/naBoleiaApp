@@ -1,1 +1,21 @@
-<p>alertas works!</p>
+<mat-list>
+  <h1 mat-header>Mural de Alertas SOS</h1>
+
+  <mat-card>
+    <mat-list-item *ngFor="let incidente of alertas$ | async as inc; let i=index">
+      <mat-icon mat-list-icon style="font-size: 1;">account_circle</mat-icon>
+      <h4 mat-line> {{ incidente.caminhoneiro }} </h4>
+      <h4 mat-line style="color: grey;"> {{ incidente.data }} </h4>
+      <mat-chip-list mat-line>
+        <mat-chip>{{ incidente.tipo }}</mat-chip>
+      </mat-chip-list>
+      <button mat-icon-button matTooltip="Visualizar Localização" color="primary">
+        <mat-icon>room</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Confirmar Atendimento" color="accent">
+        <mat-icon>check</mat-icon>
+      </button>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-card>
+</mat-list>
