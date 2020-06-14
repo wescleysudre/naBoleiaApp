@@ -1,9 +1,77 @@
-<mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Usuários
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-  </mat-expansion-panel>
-</mat-accordion>
+<div fxLayout="column" fxLayoutAlign="center stretch">
+  <mat-accordion>
+    <mat-expansion-panel expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Usuários
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-divider></mat-divider>
+
+      <div fxLayout="row" fxLayoutAlign="space-evenly center">
+        <mat-card id="truck" class="card">
+          <app-card label="Caminhoneiros" total="5.000" icone="fas fa-truck-moving"></app-card>
+        </mat-card>
+
+        <mat-card id="doctor" class="card">
+          <app-card label="Profissionais" total="2.000" icone="fas fa-user-md"></app-card>
+        </mat-card>
+      </div>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <span class="separador"></span>
+
+  <mat-accordion>
+    <mat-expansion-panel expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Solicitações
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-divider></mat-divider>
+
+      <div fxLayout="row" fxLayoutAlign="space-evenly center">
+        <mat-card id="ok" class="card">
+          <app-card label="Atendidas" total="1.250" icone="fas fa-check-circle"></app-card>
+        </mat-card>
+
+        <mat-card id="nok" class="card">
+          <app-card label="Pendentes" total="650" icone="fas fa-minus-circle"></app-card>
+        </mat-card>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <span class="separador"></span>
+
+  <mat-accordion>
+    <mat-expansion-panel expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Alertas de Incidentes
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-divider></mat-divider>
+
+      <div fxLayout="row" fxLayoutAlign="space-evenly center">
+        <mat-card id="motor" class="incident">
+          <app-card label="Pane Mecânica" total="300" icone="fas fa-tools"></app-card>
+        </mat-card>
+
+        <mat-card id="crash" class="incident">
+          <app-card label="Acidentes" total="935" icone="fas fa-car-crash"></app-card>
+        </mat-card>
+
+        <mat-card id="security" class="incident">
+          <app-card label="Segurança" total="145" icone="fas fa-user-secret"></app-card>
+        </mat-card>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>

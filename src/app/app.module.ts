@@ -11,6 +11,7 @@ import { UsuarioComponent } from './modules/usuario/usuario.component';
 import { ProfissionalComponent } from './modules/profissional/profissional.component';
 import { SolicitacoesComponent } from './modules/solicitacoes/solicitacoes.component';
 import { AlertasComponent } from './modules/alertas/alertas.component';
+import { CardComponent } from './widgets/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AlertasComponent } from './modules/alertas/alertas.component';
     UsuarioComponent,
     ProfissionalComponent,
     SolicitacoesComponent,
-    AlertasComponent
+    AlertasComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
