@@ -6,6 +6,7 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { ProfissionalComponent } from './modules/profissional/profissional.component';
 import { SolicitacoesComponent } from './modules/solicitacoes/solicitacoes.component';
 import { AlertasComponent } from './modules/alertas/alertas.component';
+import { MapComponent } from './modules/map/map.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'profissional', component: ProfissionalComponent },
   { path: 'solicitacoes', component: SolicitacoesComponent },
   { path: 'alertas', component: AlertasComponent },
+  { path: 'map', component: MapComponent },
 
 ];
 

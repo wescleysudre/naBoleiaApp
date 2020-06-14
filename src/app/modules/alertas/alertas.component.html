@@ -9,7 +9,7 @@
       <mat-chip-list mat-line>
         <mat-chip>{{ incidente.tipo }}</mat-chip>
       </mat-chip-list>
-      <button mat-icon-button matTooltip="Visualizar Localização" color="primary">
+      <button mat-icon-button matTooltip="Visualizar Localização" routerLink="/map" color="primary">
         <mat-icon>room</mat-icon>
       </button>
       <button mat-icon-button matTooltip="Confirmar Atendimento" color="accent" (click)="openDialog(incidente)">
