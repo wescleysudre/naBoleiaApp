@@ -15,6 +15,7 @@ import { CardComponent } from './widgets/card/card.component';
 import { AlertaDialogComponent } from './widgets/dialogs/alerta-dialog/alerta-dialog.component';
 import { ConsultaDialogComponent } from './widgets/dialogs/consulta-dialog/consulta-dialog.component';
 import { MapComponent } from './modules/map/map.component';
+import { DiagnosticoComponent } from './modules/diagnostico/diagnostico.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MapComponent } from './modules/map/map.component';
     CardComponent,
     AlertaDialogComponent,
     ConsultaDialogComponent,
-    MapComponent
+    MapComponent,
+    DiagnosticoComponent
   ],
   imports: [
     BrowserModule,

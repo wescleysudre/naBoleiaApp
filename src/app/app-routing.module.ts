@@ -7,6 +7,7 @@ import { ProfissionalComponent } from './modules/profissional/profissional.compo
 import { SolicitacoesComponent } from './modules/solicitacoes/solicitacoes.component';
 import { AlertasComponent } from './modules/alertas/alertas.component';
 import { MapComponent } from './modules/map/map.component';
+import { DiagnosticoComponent } from './modules/diagnostico/diagnostico.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,7 @@ const routes: Routes = [
   { path: 'solicitacoes', component: SolicitacoesComponent },
   { path: 'alertas', component: AlertasComponent },
   { path: 'map', component: MapComponent },
-
+  { path: 'diagnostico', component: DiagnosticoComponent }
 ];
 
 @NgModule({
