@@ -18,7 +18,7 @@ export class ConsultasService {
         this.consultaSubject$.next([
           {
             caminhoneiro: 'João Moutinho',
-            reclamacao: 'Problema 1',
+            reclamacao: 'Estou sentindo dores de cabeça constante, tonturas e ânsia de vômito.',
             tipoSanquineo: 'A',
             fumante: false,
             obeso: false,
@@ -35,7 +35,7 @@ export class ConsultasService {
           },
           {
             caminhoneiro: 'Miguel Veloso',
-            reclamacao: 'Problema 2',
+            reclamacao: 'Estou sentindo dores de cabeça constante, tonturas e ânsia de vômito.',
             tipoSanquineo: 'A',
             fumante: false,
             obeso: false,
@@ -52,7 +52,7 @@ export class ConsultasService {
           },
           {
             caminhoneiro: 'Ricardo Carvalho',
-            reclamacao: 'Problema 3',
+            reclamacao: 'Estou sentindo dores de cabeça constante, tonturas e ânsia de vômito.',
             tipoSanquineo: 'A',
             fumante: false,
             obeso: false,
@@ -69,7 +69,7 @@ export class ConsultasService {
           },
           {
             caminhoneiro: 'Fábio Coentrão',
-            reclamacao: 'Problema 4',
+            reclamacao: 'Estou sentindo dores de cabeça constante, tonturas e ânsia de vômito.',
             tipoSanquineo: 'A',
             fumante: false,
             obeso: false,
