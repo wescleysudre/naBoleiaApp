@@ -8,7 +8,7 @@
       <mat-chip-list mat-line>
         <mat-chip>{{ consulta.especialidade }}</mat-chip>
       </mat-chip-list>
-      <button mat-icon-button matTooltip="Confirmar Atendimento" color="primary">
+      <button mat-icon-button matTooltip="Confirmar Atendimento" color="primary" (click)="openDialog(consulta)">
         <mat-icon>thumb_up_alt</mat-icon>
       </button>
       <button mat-icon-button matTooltip="Realizar Atendimento" color="accent">

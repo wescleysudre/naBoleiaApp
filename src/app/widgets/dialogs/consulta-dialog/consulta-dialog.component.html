@@ -1,1 +1,168 @@
-<p>consulta-dialog works!</p>
+<h1 mat-dialog-title>
+  <i class="fas fa-info-circle"></i>
+  Detalhes da Consulta - {{ data.caminhoneiro }}
+</h1>
+
+<mat-divider></mat-divider>
+
+<div id="content" mat-dialog-content>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <i class="fas fa-notes-medical"></i>
+          Ficha Médica
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-list>
+        <mat-list-item>
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <h4 mat-line>Tipo Sanguíneo:</h4>
+              </td>
+              <td>{{ data.tipoSanquineo }}</td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Fumante:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.fumante"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.fumante"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Obeso:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.obeso"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.obeso"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Usuário de drogas:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.drogas"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.drogas"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Álcool:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.alcool"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.alcool"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Problemas cardíacos/hipertenso:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.coracao"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.coracao"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Diabético:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.diabetico"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.diabetico"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Já fez cirurgia:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.cirurgia"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.cirurgia"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Insônia:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.insonia"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.insonia"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Faz exercícios:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.exercicios"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.exercicios"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Desconforto Físico:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.fisico"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.fisico"></mat-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 mat-line>Desconforto psicológico:</h4>
+              </td>
+              <td>
+                <mat-checkbox checked *ngIf="data.psicologico"></mat-checkbox>
+                <mat-checkbox *ngIf="!data.psicologico"></mat-checkbox>
+              </td>
+            </tr>
+          </table>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <i class="fas fa-calendar-check"></i>
+          Solicitação relatada pelo caminhoneiro
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <p>
+        {{ data.reclamacao }}
+      </p>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <span></span>
+  <mat-divider></mat-divider>
+  <span></span>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Escolha a data da consulta</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+
+  <!-- <mat-form-field>
+    <mat-label>Escolha a data da consulta</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+</div>
+
+<div id="action" mat-dialog-actions>
+  <button mat-raised-button (click)="openSnackBar('Consulta Confirmada!', 'Sucesso')">Confirmar</button>
+  <button mat-raised-button (click)="closeDialog()">Cancelar</button>
+</div>

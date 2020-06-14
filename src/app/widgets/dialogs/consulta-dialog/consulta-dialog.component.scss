@@ -1,0 +1,29 @@
+i {
+  margin-right: 3px;
+}
+
+mat-expansion-panel {
+  margin-bottom: 5px;
+}
+
+mat-card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+mat-form-field {
+  width: 50%;
+  margin-top: 5px;
+}
+
+#content {
+  margin-top: 5px;
+}
+
+#action {
+  margin-left: 25%;
+}
+
+::ng-deep .cdk-overlay-container {
+  z-index: 1200 !important;
+}

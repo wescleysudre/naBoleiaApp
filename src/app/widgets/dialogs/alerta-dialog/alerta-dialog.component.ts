@@ -1,9 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-
-export interface DialogData {
-  name: string;
-}
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-alerta-dialog',
@@ -13,6 +10,7 @@ export interface DialogData {
 export class AlertaDialogComponent implements OnInit {
 
   constructor(
+    private _snackBar: MatSnackBar,
     public dialogRef: MatDialogRef<AlertaDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: string
   ) { }
@@ -22,6 +20,13 @@ export class AlertaDialogComponent implements OnInit {
 
   closeDialog(): void {
     this.dialogRef.close();
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.dialogRef.close();
+    this._snackBar.open(message, action, {
+      duration: 2000,
+    });
   }
 
 }
