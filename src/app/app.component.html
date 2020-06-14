@@ -2,15 +2,29 @@
   <span>na.Boleia</span>
   <span></span>
   <div fxLayoutGap="20px">
-    <a mat-raised-button routerLink="dashboard" routerLinkActive="mat-accent"
-      >dashboard</a
-    >
-    <a mat-raised-button routerLink="consultas" routerLinkActive="mat-accent"
-      >Consulta</a
-    >
-    <a mat-raised-button routerLink="alertas" routerLinkActive="mat-accent"
-      >Alertas</a
-    >
+    <a mat-button routerLink="dashboard">
+      <i class="fas fa-columns"></i>
+      Dashboard
+    </a>
+    <a mat-button routerLink="consultas" [matMenuTriggerFor]="menu">
+      <i class="fas fa-calendar-check"></i>
+      Consulta
+    </a>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="profissional">
+        <i class="fas fa-user-nurse"></i>
+        Cadastrar Profissional
+      </button>
+      <button mat-menu-item routerLink="solicitacoes">
+        <i class="fas fa-clipboard-list"></i>
+        Solicitações
+      </button>
+    </mat-menu>
+
+    <a mat-button routerLink="alertas">
+      <i class="fas fa-exclamation-circle"></i>
+      Alertas
+    </a>
   </div>
 </mat-toolbar>
 

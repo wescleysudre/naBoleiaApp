@@ -13,7 +13,15 @@ import { SolicitacoesComponent } from './modules/solicitacoes/solicitacoes.compo
 import { AlertasComponent } from './modules/alertas/alertas.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DashboardComponent, UsuarioComponent, ProfissionalComponent, SolicitacoesComponent, AlertasComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    DashboardComponent,
+    UsuarioComponent,
+    ProfissionalComponent,
+    SolicitacoesComponent,
+    AlertasComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
