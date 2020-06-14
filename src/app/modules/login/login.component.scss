@@ -1,41 +1,21 @@
 .example-card {
-  margin: 80px 500px 100px 500px;
+  margin-top: 10%;
+  width: 40%;
   border-radius: 10px;
 }
 
-.example-full-width {
-  padding: 10px;
-  padding-left: 35px;
+
+mat-form-field {
+  width: 100%;
 }
 
-.btnLogin {
-  padding: 10px;
-  padding-left: 140px;
-  padding-top: 0px;
+i {
+  font-size: 2rem;
 }
 
-.login {
-  padding: 10px;
-  padding-left: 120px;
-}
-
-.facaLogin {
-  padding-left: 80px;
-}
-
-.fa-facebook {
-  padding-top: 10px;
-  padding-left: 130px;
-  font-size: 25px;
-}
-
-.fa-google {
-  padding-top: 10px;
-  padding-left: 25px;
-  font-size: 25px;
-}
-
-.registrar {
-  padding-top: 15px;
-  padding-left: 85px;
+#social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
