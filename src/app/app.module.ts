@@ -12,6 +12,8 @@ import { ProfissionalComponent } from './modules/profissional/profissional.compo
 import { SolicitacoesComponent } from './modules/solicitacoes/solicitacoes.component';
 import { AlertasComponent } from './modules/alertas/alertas.component';
 import { CardComponent } from './widgets/card/card.component';
+import { AlertaDialogComponent } from './widgets/dialogs/alerta-dialog/alerta-dialog.component';
+import { ConsultaDialogComponent } from './widgets/dialogs/consulta-dialog/consulta-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CardComponent } from './widgets/card/card.component';
     ProfissionalComponent,
     SolicitacoesComponent,
     AlertasComponent,
-    CardComponent
+    CardComponent,
+    AlertaDialogComponent,
+    ConsultaDialogComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>
+  <i class="fas fa-exclamation-triangle"></i>
+  Alerta
+</h1>
+
+<div mat-dialog-content>
+  <p>
+    Confirmar atendimento realizado para <strong>{{ data }}</strong>?
+  </p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Confirmar</button>
+  <button mat-button (click)="closeDialog()">Cancelar</button>
+</div>
