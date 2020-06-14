@@ -1,47 +1,57 @@
-mat-expansion-panel {
-  width: 95%;
-  margin-left: 2.5%;
+#content {
+  width: 80%;
+  height: 86%;
+  background: url('../dashboard/img/grafico.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-top: 5px;
+  margin-left: 5%;
 }
 
-.card {
-  width: 45%;
-  margin-top: 2%;
-}
+// mat-expansion-panel {
+//   width: 95%;
+//   margin-left: 2.5%;
+// }
 
-.incident {
-  width: 30%;
-  margin-top: 2%;
-}
+// .card {
+//   width: 45%;
+//   margin-top: 2%;
+// }
 
-.separador {
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
+// .incident {
+//   width: 30%;
+//   margin-top: 2%;
+// }
 
-#ok {
-  background-color: #2a9d8f;
-}
+// .separador {
+//   margin-top: 2px;
+//   margin-bottom: 2px;
+// }
 
-#nok {
-  background-color: #e9c46a;
-}
+// #ok {
+//   background-color: #2a9d8f;
+// }
 
-#truck {
-  background-color: #d8e2dc;
-}
+// #nok {
+//   background-color: #e9c46a;
+// }
 
-#doctor {
-  background-color: #a8dadc;
-}
+// #truck {
+//   background-color: #d8e2dc;
+// }
 
-#motor {
-  background-color: #c38e70;
-}
+// #doctor {
+//   background-color: #a8dadc;
+// }
 
-#crash {
-  background-color: #b56576;
-}
+// #motor {
+//   background-color: #c38e70;
+// }
 
-#security {
-  background-color: #ffbe0b;
-}
+// #crash {
+//   background-color: #b56576;
+// }
+
+// #security {
+//   background-color: #ffbe0b;
+// }
