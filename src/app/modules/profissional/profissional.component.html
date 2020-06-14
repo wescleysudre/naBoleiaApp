@@ -1,1 +1,62 @@
-<p>profissional works!</p>
+<mat-card class="cadastro-card">
+  <h1 class="registrarProfissional"><b>Registro Profissional</b></h1>
+  <p>
+    <mat-form-field class="cpf" appearance="outline">
+      <mat-label>CPF</mat-label>
+      <input matInput placeholder="CPF" />
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="nome" appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome" />
+    </mat-form-field>
+    <mat-form-field class="telefone" appearance="outline">
+      <mat-label>Telefone</mat-label>
+      <input matInput placeholder="Telefone" />
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="email" appearance="outline">
+      <mat-label>E-mail</mat-label>
+      <input matInput placeholder="E-mail" />
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="especialidade" appearance="outline">
+      <mat-label>Especialidade</mat-label>
+      <input matInput placeholder="Especialidade" />
+    </mat-form-field>
+    <mat-form-field class="crp" appearance="outline">
+      <mat-label>CRP / CRM</mat-label>
+      <input matInput placeholder="CRP / CRM" />
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="documento" appearance="outline">
+      <mat-label>Documento com foto</mat-label>
+      <input matInput placeholder="Documento com Foto" />
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="senha" appearance="outline">
+      <mat-label>Senha</mat-label>
+      <input matInput placeholder="Senha" />
+    </mat-form-field>
+
+    <mat-form-field class="confirmarSenha" appearance="outline">
+      <mat-label>Confirmar senha</mat-label>
+      <input matInput placeholder="Confirmar senha" />
+    </mat-form-field>
+  </p>
+  <mat-card-actions class="btnLoginRegistrar">
+    <button mat-raised-button routerLink="../dashboard" color="primary">
+      <b>REGISTRAR</b>
+    </button>
+  </mat-card-actions>
+</mat-card>
