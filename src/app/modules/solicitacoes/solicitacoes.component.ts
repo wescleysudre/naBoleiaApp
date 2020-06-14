@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Consultas } from 'src/app/models/consultas';
+import { ConsultasService } from 'src/app/services/consultas/consultas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-solicitacoes',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolicitacoesComponent implements OnInit {
 
-  constructor() { }
+  consultas$: Observable<Consultas[]>;
+
+  constructor(
+    private consultasService: ConsultasService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.consultas$ = this.consultasService.consultas$;
+  }
+
+  goDetails(i: number, consulta: Consultas) {
+
   }
 
 }
